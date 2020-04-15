@@ -1,0 +1,10 @@
+let cute = require('./data/cute.json')
+let red = require('./data/red.json')
+let bowl = require('./data/bowl.json')
+let mouse = require('./data/mouse.json')
+
+// Imports all JSON to one location
+
+
+// then exporting all json files from here so that they are accessible in the seed.js file
+module.exports = { cute, red, bowl, mouse }
