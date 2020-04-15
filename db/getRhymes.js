@@ -1,9 +1,10 @@
-const fetch = require("node-fetch");
+const fetch = require('node-fetch');
+const fs = require('fs');
 
 // This variable allows you to store all the words you want make a Fetch call for
-let wordBank = ["cute", "red", "bowl", "mouse"];
+let wordBank = ['cute', 'red', 'bowl', 'mouse', 'cup'];
 
-// Your forEach that allow you to fire off a Fetch call for each word in wordBank
+// Your forEach that allows you to fire off a Fetch call for each word in wordBank
 wordBank.forEach((word) => {
   let URL = `https://wordsapiv1.p.rapidapi.com/words/${word}/rhymes`;
 
@@ -14,6 +15,9 @@ wordBank.forEach((word) => {
       "x-rapidapi-key": "21ce870816msh4d291e4a787bc85p173d27jsn54bacf4c4513",
     },
   })
+    .then((response) => {
+      return response.json();
+    })
     .then((response) => {
       // Where you are writing the data to its own .json file
       console.log(response);
@@ -27,7 +31,7 @@ wordBank.forEach((word) => {
         if (err) {
           console.log(err);
         } else {
-          console.log("success");
+          console.log('hello');
         }
         
         // err ? console.log(err) : console.log('success')
