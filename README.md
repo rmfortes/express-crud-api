@@ -2,17 +2,37 @@
 
 This is a JSON API with full CRUD functionality that allows users to access a database of English-language words and their rhymes. 
 
+# Technologies Used 
+
+Express and Mongoose. 
+
 # List of Features 
 
 The Rhymes API allows you to search the database using two endpoints: id and word. 
 
-* **URL** 
+# CRUD: Create 
 
-Testing
+* **URL**
 
-# Technologies Used 
+/list
 
-Express and Mongoose. 
+* **Method**
+
+`CREATE`
+
+* **Sample**
+
+```javascript
+app.post("/list/", (req, res) => {
+  Word.create(req.body).then((words) => {
+    res.json(words);
+  });
+});
+```
+
+
+
+
 
 # Contribution Guidelines 
 
