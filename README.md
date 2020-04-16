@@ -2,30 +2,13 @@
 
 This is a JSON API with full CRUD functionality that allows users to access a database of English-language words and their rhymes. 
 
-# Technologies Used 
-
-Express and Mongoose. 
-
 # List of Features 
 
 The Rhymes API allows you to search the database using two endpoints: id and word. 
 
-# Sample Response 
+# Technologies Used 
 
-```javascript 
-{
-    "rhymes": {
-        "all": [
-            "cog",
-            "fog",
-            "log"
-        ]
-    },
-    "_id": "5e97d3806ec96c94d6fcc6a9",
-    "word": "dog",
-    "__v": 0
-}
-```
+Express and Mongoose. 
 
 # CRUD: Create 
 
@@ -37,6 +20,10 @@ The Rhymes API allows you to search the database using two endpoints: id and wor
 
 `POST`
 
+* **Example**
+
+
+
 # CRUD: Read
 
 * **URL to list all entries**
@@ -47,13 +34,42 @@ The Rhymes API allows you to search the database using two endpoints: id and wor
 
 /list/:id
 
+* **Method**
+
+`GET`
+
+* **Example URL**
+
+/list/5e97d3806ec96c94d6fcc6a9
+
 * **URL to search for a single entry using word as the endpoint**
 
 /list/word/:word
 
-* **Method**
+* **Example URL**
 
-`GET`
+/list/word/dog
+
+# Sample Response 
+
+```javascript
+{
+    "rhymes": {
+        "all": [
+            "cog",
+            "fog",
+            "log",
+            "hog",
+            "clog",
+            "frog"
+        ]
+    },
+    "_id": "5e97d3806ec96c94d6fcc6a9",
+    "word": "dog",
+    "__v": 0
+}
+```
+
 
 # CRUD: Update
 
@@ -65,6 +81,23 @@ The Rhymes API allows you to search the database using two endpoints: id and wor
 
 `PUT`
 
+* **Example URL**
+
+list/5e9897f0d23fc99d3a547657
+
+* **Example Input**
+
+```javascript
+{
+    "rhymes": {
+        "all": ["care", "fair", "stare"]
+    },
+    "word": "hair"
+    "_id": "5e9897f0d23fc99d3a547657",
+    "__v": 0
+}
+```
+
 # CRUD: Delete
 
 * **URL**
@@ -74,6 +107,10 @@ The Rhymes API allows you to search the database using two endpoints: id and wor
 * **Method** 
 
 `DELETE`
+
+* **Example URL**
+
+list/5e9897f0d23fc99d3a547657
 
 # Contribution Guidelines 
 
