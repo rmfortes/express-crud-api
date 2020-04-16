@@ -2,8 +2,8 @@ const mongoose = require("../db/connection.js");
 const Schema = mongoose.Schema;
 
 const Word = new Schema({
-  'word': String,
-  'rhymes': {
+  word: String,
+  rhymes: {
     all: [String],
   },
 });
