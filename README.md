@@ -1,8 +1,14 @@
 # Rhymes API
 
-This is a JSON API with full CRUD functionality that allows users to access a database of words and their rhymes. 
+This is a JSON API with full CRUD functionality that allows users to access a database of English-language words and their rhymes. 
 
 # List of Features 
+
+The Rhymes API allows you to search the database using two endpoints: id and word. 
+
+* **URL** 
+
+Testing
 
 # Technologies Used 
 
