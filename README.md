@@ -20,9 +20,18 @@ Express and Mongoose.
 
 `POST`
 
-* **Example**
+* **Example Response**
 
-
+```javascript
+{
+    "rhymes": {
+        "all": []
+    },
+    "word": ""
+    "_id": "5e9897f0d23fc99d3a547657",
+    "__v": 0
+}
+```
 
 # CRUD: Read
 
