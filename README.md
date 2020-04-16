@@ -39,19 +39,15 @@ The Rhymes API allows you to search the database using two endpoints: id and wor
 
 # CRUD: Read
 
-**To list all entries**
-
-* **URL**
+* **URL to list all entries**
 
 /list
 
-**To search for a single entry**
-
-* **URL using id as the endpoint**
+* **URL to search for a single entry using id as the endpoint**
 
 /list/:id
 
-* **URL using word as the endpoint**
+* **URL to search for a single entry using word as the endpoint**
 
 /list/word/:word
 
@@ -81,6 +77,6 @@ The Rhymes API allows you to search the database using two endpoints: id and wor
 
 # Contribution Guidelines 
 
-Should you identify any bugs, have any ideas for how to make code more scaleable (especially with regards to automating creation & importing of individual JSON files for each data entry), kindly submit a pull request on this project's GitHub repo. 
+Should you identify any bugs or have any ideas for how to make code more scaleable (especially with regards to automating creation & importing of individual JSON files for each data entry), kindly submit a pull request on this project's GitHub repo. 
 
 Link to repo: https://github.com/rmfortes/express-crud-api
