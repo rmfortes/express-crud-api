@@ -59,7 +59,7 @@ Express and Mongoose.
 
 /list/word/dog
 
-# Sample Response 
+* **Sample Response**
 
 ```javascript
 {
