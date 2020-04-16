@@ -1,8 +1,8 @@
-const fetch = require('node-fetch');
-const fs = require('fs');
+const fetch = require("node-fetch");
+const fs = require("fs");
 
 // This variable allows you to store all the words you want make a Fetch call for
-let wordBank = ['cute', 'red', 'bowl', 'mouse', 'cup'];
+let wordBank = ["cute", "red", "bowl", "mouse", "cup"];
 
 // Your forEach that allows you to fire off a Fetch call for each word in wordBank
 wordBank.forEach((word) => {
@@ -31,9 +31,9 @@ wordBank.forEach((word) => {
         if (err) {
           console.log(err);
         } else {
-          console.log('hello');
+          console.log("hello");
         }
-        
+
         // err ? console.log(err) : console.log('success')
       });
     })
