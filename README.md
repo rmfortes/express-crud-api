@@ -10,6 +10,23 @@ Express and Mongoose.
 
 The Rhymes API allows you to search the database using two endpoints: id and word. 
 
+# Sample Response 
+
+```javascript 
+{
+    "rhymes": {
+        "all": [
+            "cog",
+            "fog",
+            "log"
+        ]
+    },
+    "_id": "5e97d3806ec96c94d6fcc6a9",
+    "word": "dog",
+    "__v": 0
+}
+```
+
 # CRUD: Create 
 
 * **URL**
@@ -18,21 +35,49 @@ The Rhymes API allows you to search the database using two endpoints: id and wor
 
 * **Method**
 
-`CREATE`
+`POST`
 
-* **Sample**
+# CRUD: Read
 
-```javascript
-app.post("/list/", (req, res) => {
-  Word.create(req.body).then((words) => {
-    res.json(words);
-  });
-});
-```
+**To list all entries**
 
+* **URL**
 
+/list
 
+**To search for a single entry**
 
+* **URL using id as the endpoint**
+
+/list/:id
+
+* **URL using word as the endpoint**
+
+/list/word/:word
+
+* **Method**
+
+`GET`
+
+# CRUD: Update
+
+* **URL**
+
+/list/:id 
+
+* **Method**
+
+`PUT`
+
+# CRUD: Delete
+
+* **URL**
+
+/list/:id
+
+* **Method** 
+
+`DELETE`
 
 # Contribution Guidelines 
 
