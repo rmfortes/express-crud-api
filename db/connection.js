@@ -1,6 +1,14 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost/Words_Rhymes_API", {
+let mongoURI=""
+
+if (process.env.NODE_ENV === "production") {
+  mongoURI = process.env.DB_URL;
+} else {
+  mongoURI = "mongodb://localhost/book-e";
+}
+
+mongoose.connect(mongoURI, {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true
