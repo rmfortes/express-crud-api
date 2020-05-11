@@ -123,6 +123,6 @@ list/5e9897f0d23fc99d3a547657
 
 # Contribution Guidelines 
 
-Should you identify any bugs or have any ideas for how to make code more scaleable (especially with regards to automating creation & importing of individual JSON files for each data entry), kindly submit a pull request on this project's GitHub repo. 
+Should you identify any bugs or have any ideas for how to make code more scaleable (especially with regards to automating creation & importing of individual JSON files for each data entry), kindly submit an issue on this project's GitHub repo. 
 
 Link to repo: https://github.com/rmfortes/express-crud-api
